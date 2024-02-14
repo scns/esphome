@@ -17,7 +17,7 @@ esphome:
     version: "${vdate}"
 
 dashboard_import:
-  package_import_url: github://scns/esphome/watermeter.yaml
+  package_import_url: github://scns/esphome/dev_tempsensor.yaml
 
 packages:
   remote_package:
