@@ -1,0 +1,29 @@
+# Delen en bewerken mag maar laat deze eerste regels staan.
+# Bron : https://www.maartenschmeitz.nl
+# Bron File : 
+# © maarten schmeitz
+substitutions:
+  name: Tempertauursensor
+
+esphome:
+  name: ${name}
+  platform: ESP8266
+  board: d1_mini
+  name_add_mac_suffix: true
+  esp8266_restore_from_flash: true
+  comment: '${device_description}'
+  project:
+    name: "scns.${name}"
+    version: "${vdate}"
+
+dashboard_import:
+  package_import_url: github://scns/esphome/dev_tempsensor.yaml
+
+packages:
+  remote_package:
+    url: https://github.com/scns/esphome
+    ref: Dev
+    files:
+      - tempsensorDHT/dev_basis.yaml
+      - tempsensorDHT/dev_sensor.yaml
+    refresh: 0d
