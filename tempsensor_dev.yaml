@@ -22,7 +22,7 @@ dashboard_import:
 packages:
   remote_package:
     url: https://github.com/scns/esphome
-    ref: main
+    ref: Dev
     files:
       - tempsensorDHT/basis.yaml
       - tempsensorDHT/sensor.yaml
