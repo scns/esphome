@@ -24,6 +24,6 @@ packages:
     url: https://github.com/scns/esphome
     ref: Dev
     files:
-      - tempsensorDHT/dev_basis.yaml
-      - tempsensorDHT/dev_sensor.yaml
+      - TempSensorDHT/dev_basis.yaml
+      - TempSensorDHT/dev_sensor.yaml
     refresh: 0d
