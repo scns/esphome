@@ -3,7 +3,7 @@
 # Bron File : 
 # © maarten schmeitz
 substitutions:
-  name: Temperatuursensor
+  name: temperatuursensor
 
 esphome:
   name: ${name}
