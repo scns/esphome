@@ -17,13 +17,16 @@ esphome:
     version: "${vdate}"
 
 dashboard_import:
-  package_import_url: github://scns/esphome/scripts/dev_tempsensor.yaml
+  package_import_url: github://scns/esphome/devtempsensor.yaml
+  # package_import_url: github://huizebruin/esphome/devtempsensor.yaml
+  
 
 packages:
   remote_package:
     url: https://github.com/scns/esphome
+    #url: https://github.com/huizebruin/esphome
     ref: main
     files:
-      - scripts/TempSensorDHT/dev_basis.yaml
-      - scripts/TempSensorDHT/dev_sensor.yaml
+      - package/dev_basis.yaml
+      - package/dev_sensor.yaml
     refresh: 0d

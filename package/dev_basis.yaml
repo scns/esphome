@@ -1,5 +1,5 @@
 substitutions:
-  device_description: ${name} gemaakt door huizebruin.nl versie ${vdate}.
+  device_description: ${name} gemaakt door maartenschmeitz.nl versie ${vdate}.
   vdate: "v24.2.1" 
   date: "14.12.2023"
 
