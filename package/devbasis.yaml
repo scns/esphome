@@ -25,7 +25,7 @@ logger:
   - platform: homeassistant
     id: time_homeassistant
     on_time_sync:
-      - component.update: S0tool_uptime_timestamp  
+      - component.update: tempsensor_uptime_timestamp  
 
 sensor:
 #------------------------#  sensoren #------------------------#
@@ -42,7 +42,7 @@ sensor:
     entity_category: diagnostic
     lambda: |-
       static float timestamp = (
-        id(time_homeassistant).utcnow().timestamp - id(S0tool_uptime).state
+        id(time_homeassistant).utcnow().timestamp - id(tempsensor_uptime).state
       );
       return timestamp;  
 
@@ -65,10 +65,10 @@ text_sensor:
   - platform: wifi_info
     ip_address:
       name: "${name} IP-adres"
-      id: s0tool_ip_adres
+      id: tempsensor_ip_adres
       icon: mdi:ip-network
 
     mac_address:
       name: "${name} Mac-adres"
-      id: s0tool_mac_adres
+      id: tempsensor_mac_adres
       icon: mdi:folder-key-network-outline
