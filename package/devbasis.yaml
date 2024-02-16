@@ -18,6 +18,8 @@ web_server:
   
 captive_portal:
 
+ota:
+
 # ⬇ Enable logging ⬇ # 
 logger:
   level: INFO
