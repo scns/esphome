@@ -21,11 +21,11 @@ logger:
   level: INFO
   esp8266_store_log_strings_in_flash: false
 
-  time:
-  - platform: homeassistant
-    id: time_homeassistant
-    on_time_sync:
-      - component.update: tempsensor_uptime_timestamp  
+time:
+- platform: homeassistant
+  id: time_homeassistant
+  on_time_sync:
+    - component.update: tempsensor_uptime_timestamp  
 
 sensor:
 #------------------------#  sensoren #------------------------#
