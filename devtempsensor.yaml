@@ -13,18 +13,16 @@ esphome:
   esp8266_restore_from_flash: true
   comment: '${device_description}'
   project:
-    name: "scns.${name}"
+    name: "schmm.${name}"
     version: "${vdate}"
 
 dashboard_import:
   package_import_url: github://scns/esphome/devtempsensor.yaml
-  # package_import_url: github://huizebruin/esphome/devtempsensor.yaml
   
 
 packages:
   remote_package:
     url: https://github.com/scns/esphome
-    #url: https://github.com/huizebruin/esphome
     ref: main
     files:
       - package/dev_basis.yaml
